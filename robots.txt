@@ -1,0 +1,4 @@
+User-Agent: *
+Allow: *
+
+Sitemap: https://ianadair.net/sitemap.xml

@@ -8,27 +8,27 @@
     cursor: pointer;
 
     &[data-imgName="A,B,C.png"] {
-        background-image: url("/assets/concept-art/A\,B\,C.png");
+        background-image: url("/assets/traditional-illustration/A\,B\,C.png");
         background-size: 100%;
     }
     &[data-imgName="Amir on rock.png"] {
-        background-image: url("/assets/concept-art/Amir\ on\ rock.png");
+        background-image: url("/assets/traditional-illustration/Amir\ on\ rock.png");
         background-size: 100%;
     }
     &[data-imgName="Amir1.png"] {
-        background-image: url("/assets/concept-art/Amir1.png");
+        background-image: url("/assets/traditional-illustration/Amir1.png");
         background-size: 100%;
     }
     &[data-imgName="IMG_1683.png"] {
-        background-image: url("/assets/concept-art/IMG_1683.png");
+        background-image: url("/assets/traditional-illustration/IMG_1683.png");
         background-size: 50%;
     }
     &[data-imgName="IMG_1688.png"] {
-        background-image: url("/assets/concept-art/IMG_1688.png");
+        background-image: url("/assets/traditional-illustration/IMG_1688.png");
         background-size: 60%;
     }
     &[data-imgName="Sheriff.png"] {
-        background-image: url("/assets/concept-art/Sheriff.png");
+        background-image: url("/assets/traditional-illustration/Sheriff.png");
         background-size: 100%;
     }
 }

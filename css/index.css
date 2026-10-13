@@ -70,11 +70,11 @@ a {
     .bg-image-wrapper {
         & > .image-container {
             &[data-imgName="IAN_CONCEPT_ART_COVER"] {
-                background-image: url("/assets/concept-art/Amir1.png");
+                background-image: url("/assets/traditional-illustration/Amir1.png");
                 background-size: 100%;
             }
             &[data-imgName="IAN_DESIGN_COVER"] {
-                background-image: url("/assets/designs/IBEW\ LOCAL\ 6.png");
+                background-image: url("/assets/digital-illustration/IBEW\ LOCAL\ 6.png");
                 background-size: 100%;
             }
             &[data-imgName="IAN_PHOTOGRAPHY_COVER"] {
@@ -124,11 +124,11 @@ a {
     cursor: pointer;
 
     &[data-imgName="IAN_CONCEPT_ART_COVER"] {
-        background-image: url("/assets/concept-art/Amir1.png");
+        background-image: url("/assets/traditional-illustration/Amir1.png");
         background-size: 100%;
     }
     &[data-imgName="IAN_DESIGN_COVER"] {
-        background-image: url("/assets/designs/IBEW\ LOCAL\ 6.png");
+        background-image: url("/assets/digital-illustration/IBEW\ LOCAL\ 6.png");
         background-size: 100%;
     }
     &[data-imgName="IAN_PHOTOGRAPHY_COVER"] {
