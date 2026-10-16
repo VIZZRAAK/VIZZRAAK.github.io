@@ -60,7 +60,7 @@
     }
 }
 .display-image-wrapper {
-    height: 450px;
+    min-height: 450px;
     width: 45%;
     transition: opacity 0.3s ease-in-out, transform 0.5s ease-in-out;
     opacity: 0;
@@ -110,5 +110,11 @@
     .display-image-wrapper {
         width: 40% !important;
         height: 300px !important;
+    }
+}
+
+@media (width > 1200px) {
+    .display-image-wrapper {
+        height: 60vh;
     }
 }
