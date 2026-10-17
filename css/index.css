@@ -4,6 +4,13 @@
     --text-color: black;
     --font-weight: 400;
     --font-family: 'Alata', sans-serif;
+
+    --modal-elements-display: none;
+    --modal-background-image: url("");
+
+    --modal-image-height: 60vh;
+    --modal-image-width: 50vw;
+    --document-overflow-mode: scroll;
 }
 
 a {
@@ -25,6 +32,7 @@ body * {
 body {
     opacity: 0;
     animation: fadeIn 0.3s ease 0.3s forwards;
+    overflow: var(--document-overflow-mode)
 }
 
 .image-container {
@@ -180,6 +188,48 @@ body {
     transition: opacity 0.3s ease-in-out !important;
 }
 
+/* modal zoom-in */
+.modal-overlay {
+    width: 100% !important;
+    height: 100% !important;
+    z-index: 3 !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+    background-color: white !important;
+    display: var(--modal-elements-display);
+}
+
+.modal-image {
+    width: var(--modal-image-width) !important;
+    height: var(--modal-image-height) !important;
+    z-index: 3 !important;
+    position: fixed;
+    top: calc((100vh - var(--modal-image-height)) / 2);
+    left: calc((100vw - var(--modal-image-width)) / 2);
+    opacity: 1;
+    background-image: var(--modal-background-image);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+    display: var(--modal-elements-display);
+
+}
+
+.modal-remove {
+    position: fixed;
+    right: 0;
+    top: 0;
+    opacity: 1;
+    z-index: 3;
+    display: var(--modal-elements-display);
+    
+    &:hover {
+        cursor: pointer;
+    }
+}
+
 /* applies to all *except* /index.html */
 .display-image-container {
     width: 100% !important;
@@ -188,7 +238,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-color: rgba(254, 254, 254, 1);
-    cursor: pointer;
+    cursor: zoom-in;
 }
 
 .display-image-wrapper {
