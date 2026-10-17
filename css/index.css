@@ -1,5 +1,6 @@
 :root {
     --image-height: 60vh;
+    --me-photo-image-height: 120vh;
     --image-width: 500px;
     --text-color: black;
     --font-weight: 400;
@@ -252,7 +253,7 @@ body {
 
 /* /about-me.html */
 .profile-image-container {
-    height: var(--image-height) !important;
+    height: var(--me-photo-image-height) !important;
 }
 
 /* all */
