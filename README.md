@@ -1,1 +1,3 @@
 # Ian's Portfolio Website
+
+Born in San Francisco, Ian Adair moved to Oregon where he graduated from Southern Oregon University with a Bachelors of Science in Art and EMDA(Emerging Media & Digital Arts) in 2023. Since moving back to the Bay Area Ian has worked as a labor organizer while volunteering his extensive design, photography, and illustration skills to local progressive organizations and political campaigns.

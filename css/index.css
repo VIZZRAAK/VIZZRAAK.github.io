@@ -1,108 +1,117 @@
-body {
-    opacity: 0;
-    animation: fadeIn 0.5s ease 0.3s forwards;
-}
-
-.profile-image-container {
-    width: 50% !important;
-    height: 600px !important;
-}
-
-.profile-image {
-    justify-self: start !important;
-    display: flex;
-}
-
-.lower-container {
-    margin-top: -60vh;
-}
-
-div[data-margin="10"] {
-    margin-top: 100px !important;
-}
-
-.font-text {
-    font-family: 'Alata', sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+:root {
+    --image-height: 60vh;
+    --image-width: 500px;
+    --text-color: black;
+    --font-weight: 400;
+    --font-family: 'Alata', sans-serif;
 }
 
 a {
-    color: black !important;
     text-decoration: none !important;
 }
 
-.image-label {
-    margin-top: -225px;
+body * {
+    color: var(--text-color) !important;
+    font-weight: var(--font-weight);
+    font-family: var(--font-family);
 }
 
-@media (0px <= width <= 400px) {
-    .bg-image-wrapper {
-        width: 100% !important;
-        height: 250px !important;
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    20% {opacity: 0; }
+    100% { opacity: 1; }
+}
+
+body {
+    opacity: 0;
+    animation: fadeIn 0.3s ease 0.3s forwards;
+}
+
+.image-container {
+    width: 100% !important;
+    height: 100% !important;
+    opacity: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(254, 254, 254, 1);
+    cursor: pointer;
+}
+
+.image-container[data-imgSection="traditional-illustration"] {
+
+    &[data-imgName="IAN_TRADITIONAL_ILLUSTRATION_COVER_1"] {
+        background-image: url("/assets/traditional-illustration/Amir1.png");
+        background-size: 100%;
     }
-    .image-label {
-        margin-top: -100px;
+    &[data-imgName="IAN_TRADITIONAL_ILLUSTRATION_COVER_2"] {
+        background-image: url("/assets/traditional-illustration/Amir\ on\ rock.png");
+        background-size: 100%;
+    }
+    &[data-imgName="IAN_TRADITIONAL_ILLUSTRATION_COVER_3"] {
+        background-image: url("/assets/traditional-illustration/IMG_1683.png");
+        background-size: 60%;
+    }
+    &[data-imgName="IAN_TRADITIONAL_ILLUSTRATION_COVER_4"] {
+        background-image: url("/assets/traditional-illustration/IMG_1688.png");
+        background-size: 100%;
+    }
+    &[data-imgName="IAN_TRADITIONAL_ILLUSTRATION_COVER_5"] {
+        background-image: url("/assets/traditional-illustration/A\,B\,C.png");
+        background-size: 100%;
     }
 }
 
-@media (401px <= width <= 500px) {
-    .bg-image-wrapper {
-        width: 100% !important;
-        height: 300px !important;
+.image-container[data-imgSection="photography"] {
+
+    &[data-imgName="IAN_PHOTOGRAPHY_COVER_1"] {
+        background-image: url("/assets/photography/GROUP_PICTURE.png");
+        background-size: 100%;
     }
-    .image-label {
-        margin-top: -150px;
+    &[data-imgName="IAN_PHOTOGRAPHY_COVER_2"] {
+        background-image: url("/assets/photography/IMG_3267.JPG");
+        background-size: 100%;
+    }
+    &[data-imgName="IAN_PHOTOGRAPHY_COVER_3"] {
+        background-image: url("/assets/photography/IMG_3667.JPG");
+        background-size: 100%;
+    }
+    &[data-imgName="IAN_PHOTOGRAPHY_COVER_4"] {
+        background-image: url("/assets/photography/CLAUDIA.png");
+        background-size: 100%;
+    }
+    &[data-imgName="IAN_PHOTOGRAPHY_COVER_5"] {
+        background-image: url("/assets/photography/IMG_3274.JPG");
+        background-size: 100%;
     }
 }
 
-@media (500px <= width <= 768px) {
-    .bg-image-wrapper {
-        width: 100% !important;
-        height: 500px !important;
-    }
-    .image-label {
-        margin-top: -250px;
-    }
-}
+.image-container[data-imgSection="digital-illustration"] {
 
-@media (769px <= width <= 1200px) {
-    .bg-image-wrapper {
-        width: 40% !important;
-        height: 300px !important;
+    &[data-imgName="IAN_DIGITAL_ILLUSTRATION_COVER_1"] {
+        background-image: url("/assets/digital-illustration/IBEW\ LOCAL\ 6.png");
+        background-size: 100%;
     }
-    .image-label {
-        margin-top: -150;
+    &[data-imgName="IAN_DIGITAL_ILLUSTRATION_COVER_2"] {
+        background-image: url("/assets/digital-illustration/Loyal\ Au\ Mort\ Logo.png");
+        background-size: 100%;
     }
-}
-
-@media (width >= 1200px) {
-    .bg-image-wrapper {
-        & > .image-container {
-            &[data-imgName="IAN_CONCEPT_ART_COVER"] {
-                background-image: url("/assets/traditional-illustration/Amir1.png");
-                background-size: 100%;
-            }
-            &[data-imgName="IAN_DESIGN_COVER"] {
-                background-image: url("/assets/digital-illustration/IBEW\ LOCAL\ 6.png");
-                background-size: 100%;
-            }
-            &[data-imgName="IAN_PHOTOGRAPHY_COVER"] {
-                background-image: url("/assets/photography/GROUP_PICTURE.png");
-                background-size: 100%;
-            }
-        }
+    &[data-imgName="IAN_DIGITAL_ILLUSTRATION_COVER_3"] {
+        background-image: url("/assets/digital-illustration/Mt.\ Shasta\ Stamp.png");
+        background-size: 100%;
+    }
+    &[data-imgName="IAN_DIGITAL_ILLUSTRATION_COVER_4"] {
+        background-image: url("/assets/digital-illustration/EBDSA\ Tear\ Gas\ Control\ Icon\ Portfolio.png");
+        background-size: 90%;
+    }
+    &[data-imgName="IAN_DIGITAL_ILLUSTRATION_COVER_5"] {
+        background-image: url("/assets/digital-illustration/Amy\ Hiett\ Logo.png");
+        background-size: 100%;
     }
 }
 
 .bg-image-wrapper {
-    height: 60vh;
-    border: 1px solid black;
+    height: var(--image-height);
+    background-color: white !important;
     width: 500px;
     transition: opacity 0.2s ease-in-out;
 
@@ -115,18 +124,19 @@ a {
     }
 
     &:hover {
-        & > a.image-link > div {
-            transition: opacity 0.2s ease-in-out;
-            opacity: 0;
+        & > a.image-link > div.image-container {
+            transition: opacity 0.3s ease-in-out !important;
+            opacity: 0 !important;
+
+            &.cycle-item {
+                animation-play-state: paused;
+            }
         }
-        & h1 {
+        & h1.image-label {
             opacity: 1;
+            transition: opacity 0.3s ease-in-out !important;
         }
     }
-}
-
-.footer-text-div {
-    transition: opacity 1s ease-in-out;
 }
 
 @keyframes cycle {
@@ -135,57 +145,67 @@ a {
   100%  { opacity: 0; }
 }
 
-cycle-item:nth-child(1) {
-    animation: cycle 1.5s linear infinite 0s;
-}
-cycle-item:nth-child(2) {
-    animation: cycle 1.5s linear infinite 0.3s;
-}
-cycle-item:nth-child(3) {
-    animation: cycle 1.5s linear infinite 0.6s;
-}
-cycle-item:nth-child(4) {
-    animation: cycle 1.5s linear infinite 0.9s;
-}
-cycle-item:nth-child(5) {
-    animation: cycle 1.5s linear infinite 1.2s;
+.cycle-item {
+    animation-name: cycle;
+    animation-duration: 1.5s;
+    animation-timing-function: step-end;
+    animation-iteration-count: infinite;
 }
 
-.image-container {
+.cycle-item:nth-child(1) {
+    animation-delay: 0.0s;
+}
+.cycle-item:nth-child(2) {
+    animation-delay: 0.3s;
+}
+.cycle-item:nth-child(3) {
+    animation-delay: 0.6s;
+}
+.cycle-item:nth-child(4) {
+    animation-delay: 0.9s;
+}
+.cycle-item:nth-child(5) {
+    animation-delay: 1.2s;
+}
+
+.lower-container {
+    margin-top: calc(var(--image-height) * -1);
+}
+
+.image-label {
+    margin-top: calc(var(--image-height) * -1);
+    height: 100% !important;
+    width: 100% !important;
+    background-color: white;
+    transition: opacity 0.3s ease-in-out !important;
+}
+
+/* applies to all *except* /index.html */
+.display-image-container {
     width: 100% !important;
     height: 100% !important;
-    opacity: 0;
+    opacity: 1;
     background-repeat: no-repeat;
     background-position: center;
     background-color: rgba(254, 254, 254, 1);
     cursor: pointer;
+}
 
-    &[data-imgName="IAN_CONCEPT_ART_COVER_1"] {
-        background-image: url("/assets/traditional-illustration/Amir1.png");
-        background-size: 100%;
-    }
-    &[data-imgName="IAN_CONCEPT_ART_COVER_2"] {
-        background-image: url("/assets/traditional-illustration/Amir\ on\ rock.png");
-        background-size: 100%;
-    }
-    &[data-imgName="IAN_CONCEPT_ART_COVER_3"] {
-        background-image: url("/assets/traditional-illustration/IMG_1683.png");
-        background-size: 100%;
-    }
-    &[data-imgName="IAN_CONCEPT_ART_COVER_4"] {
-        background-image: url("/assets/traditional-illustration/IMG_1688.png");
-        background-size: 100%;
-    }
-    &[data-imgName="IAN_CONCEPT_ART_COVER_5"] {
-        background-image: url("/assets/traditional-illustration/A\,B\,C.png");
-        background-size: 100%;
-    }
-    &[data-imgName="IAN_DESIGN_COVER"] {
-        background-image: url("/assets/digital-illustration/IBEW\ LOCAL\ 6.png");
-        background-size: 100%;
-    }
-    &[data-imgName="IAN_PHOTOGRAPHY_COVER"] {
-        background-image: url("/assets/photography/GROUP_PICTURE.png");
-        background-size: 100%;
-    }
+.display-image-wrapper {
+    height: 60vh;
+    width: 500px;
+    transition: opacity 0.3s ease-in-out, transform 0.5s ease-in-out;
+    opacity: 0;
+    transform: translateY(20px);
+
+}
+
+/* /about-me.html */
+.profile-image-container {
+    height: var(--image-height) !important;
+}
+
+/* all */
+.footer-text-div {
+    transition: opacity 1s ease-in-out;
 }
