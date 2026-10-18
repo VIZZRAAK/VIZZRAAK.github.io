@@ -24,6 +24,10 @@
         background-image: url("/assets/traditional-illustration/Sheriff.png");
         background-size: 100%;
     }
+    &[data-imgName="Biker.png"] {
+        background-image: url("/assets/traditional-illustration/Biker.png");
+        background-size: 100%;
+    }
 }
 
 .display-image-container[data-imgSection="digital-illustration"] {
