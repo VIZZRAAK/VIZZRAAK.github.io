@@ -5,11 +5,10 @@ let allImages = document.querySelectorAll(".display-image-container");
 for (let image of allImages) {
     image.addEventListener("click", () => {
 
-        let imageUrl = image.getAttribute("data-imgName");
-        let imageSection = image.getAttribute("data-imgSection");
+        let imageUrl = image.getAttribute("src");
 
         document.documentElement.style.setProperty("--modal-elements-display", "block");
-        document.documentElement.style.setProperty("--modal-background-image", `url("/assets/${imageSection}/${imageUrl}")`);
+        document.documentElement.style.setProperty("--modal-background-image", `url("${imageUrl}")`);
         document.documentElement.style.setProperty("--document-overflow-mode", "hidden");
     })
 }
