@@ -52,47 +52,47 @@ body {
 .image-container[data-imgSection="traditional-illustration"] {
 
     &[data-imgName="IAN_TRADITIONAL_ILLUSTRATION_COVER_1"] {
-        background-image: url("/assets/traditional-illustration/Amir1.png");
+        background-image: url("/assets/traditional-illustration/SNIPER.png");
         background-size: 100%;
     }
     &[data-imgName="IAN_TRADITIONAL_ILLUSTRATION_COVER_2"] {
-        background-image: url("/assets/traditional-illustration/Amir\ on\ rock.png");
+        background-image: url("/assets/traditional-illustration/SCARY_FAIRY.png");
         background-size: 100%;
     }
     &[data-imgName="IAN_TRADITIONAL_ILLUSTRATION_COVER_3"] {
-        background-image: url("/assets/traditional-illustration/IMG_1683.png");
+        background-image: url("/assets/traditional-illustration/CLICKER.png");
         background-size: 60%;
     }
     &[data-imgName="IAN_TRADITIONAL_ILLUSTRATION_COVER_4"] {
-        background-image: url("/assets/traditional-illustration/IMG_1688.png");
+        background-image: url("/assets/traditional-illustration/MACY.png");
         background-size: 100%;
     }
     &[data-imgName="IAN_TRADITIONAL_ILLUSTRATION_COVER_5"] {
-        background-image: url("/assets/traditional-illustration/A\,B\,C.png");
-        background-size: 100%;
+        background-image: url("/assets/traditional-illustration/MANDO.png");
+        background-size: 60%;
     }
 }
 
 .image-container[data-imgSection="photography"] {
 
     &[data-imgName="IAN_PHOTOGRAPHY_COVER_1"] {
-        background-image: url("/assets/photography/GROUP_PICTURE.png");
+        background-image: url("/assets/photography/CLAUDIA_GROUP_PICTURE.png");
         background-size: 100%;
     }
     &[data-imgName="IAN_PHOTOGRAPHY_COVER_2"] {
-        background-image: url("/assets/photography/IMG_3267.JPG");
+        background-image: url("/assets/photography/ROCK_CLIMBING.jpg");
         background-size: 100%;
     }
     &[data-imgName="IAN_PHOTOGRAPHY_COVER_3"] {
-        background-image: url("/assets/photography/IMG_3667.JPG");
+        background-image: url("/assets/photography/SNOWY_PEAK_FENCE.JPG");
         background-size: 100%;
     }
     &[data-imgName="IAN_PHOTOGRAPHY_COVER_4"] {
-        background-image: url("/assets/photography/CLAUDIA.png");
-        background-size: 100%;
+        background-image: url("/assets/photography/OBELISK.JPG");
+        background-size: 80%;
     }
     &[data-imgName="IAN_PHOTOGRAPHY_COVER_5"] {
-        background-image: url("/assets/photography/IMG_3274.JPG");
+        background-image: url("/assets/photography/DIRTY_FRUIT.JPG");
         background-size: 100%;
     }
 }
@@ -100,24 +100,24 @@ body {
 .image-container[data-imgSection="digital-illustration"] {
 
     &[data-imgName="IAN_DIGITAL_ILLUSTRATION_COVER_1"] {
-        background-image: url("/assets/digital-illustration/IBEW\ LOCAL\ 6.png");
+        background-image: url("/assets/digital-illustration/AMIR_POSE_1.png");
         background-size: 100%;
     }
     &[data-imgName="IAN_DIGITAL_ILLUSTRATION_COVER_2"] {
-        background-image: url("/assets/digital-illustration/Loyal\ Au\ Mort\ Logo.png");
+        background-image: url("/assets/digital-illustration/TEAM_LINEUP.png");
         background-size: 100%;
     }
     &[data-imgName="IAN_DIGITAL_ILLUSTRATION_COVER_3"] {
-        background-image: url("/assets/digital-illustration/Mt.\ Shasta\ Stamp.png");
+        background-image: url("/assets/digital-illustration/SBWU_LOGO.png");
         background-size: 100%;
     }
     &[data-imgName="IAN_DIGITAL_ILLUSTRATION_COVER_4"] {
-        background-image: url("/assets/digital-illustration/EBDSA\ Tear\ Gas\ Control\ Icon\ Portfolio.png");
-        background-size: 90%;
+        background-image: url("/assets/digital-illustration/VANGUARD.png");
+        background-size: 60%;
     }
     &[data-imgName="IAN_DIGITAL_ILLUSTRATION_COVER_5"] {
-        background-image: url("/assets/digital-illustration/Amy\ Hiett\ Logo.png");
-        background-size: 100%;
+        background-image: url("/assets/digital-illustration/DSA_POSTER.png");
+        background-size: 60%;
     }
 }
 
