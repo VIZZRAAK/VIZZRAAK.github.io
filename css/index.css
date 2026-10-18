@@ -9,9 +9,12 @@
     --modal-elements-display: none;
     --modal-background-image: url("");
 
-    --modal-image-height: 60vh;
-    --modal-image-width: 50vw;
     --document-overflow-mode: scroll;
+
+    --modal-scaling-multiplier: 2;
+
+    --modal-image-width: clamp(var(--image-width), calc(var(--image-width) * var(--modal-scaling-multiplier)), 90vw);
+    --modal-image-height: clamp(var(--image-height), calc(var(--image-height) * var(--modal-scaling-multiplier)), 90vh);
 }
 
 a {
@@ -156,7 +159,7 @@ body {
 
 .cycle-item {
     animation-name: cycle;
-    animation-duration: 1.5s;
+    animation-duration: 2.5s;
     animation-timing-function: step-end;
     animation-iteration-count: infinite;
 }
@@ -165,16 +168,16 @@ body {
     animation-delay: 0.0s;
 }
 .cycle-item:nth-child(2) {
-    animation-delay: 0.3s;
+    animation-delay: 0.5s;
 }
 .cycle-item:nth-child(3) {
-    animation-delay: 0.6s;
+    animation-delay: 1.0s;
 }
 .cycle-item:nth-child(4) {
-    animation-delay: 0.9s;
+    animation-delay: 1.5s;
 }
 .cycle-item:nth-child(5) {
-    animation-delay: 1.2s;
+    animation-delay: 2.0s;
 }
 
 .lower-container {
@@ -213,7 +216,7 @@ body {
     background-image: var(--modal-background-image);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 50%;
+    background-size: 40%;
     display: var(--modal-elements-display);
 
 }
