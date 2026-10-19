@@ -76,7 +76,7 @@ body {
 .image-container[data-imgSection="photography"] {
 
     &[data-imgName="IAN_PHOTOGRAPHY_COVER_1"] {
-        background-image: url("/assets/photography/CLAUDIA_GROUP_PICTURE.png");
+        background-image: url("/assets/photography/CLAUDIA_SPEECH.JPG");
         background-size: 100%;
     }
     &[data-imgName="IAN_PHOTOGRAPHY_COVER_2"] {
