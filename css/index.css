@@ -11,10 +11,10 @@
 
     --document-overflow-mode: scroll;
 
-    --modal-scaling-multiplier: 2;
+    --modal-scaling-multiplier: 5;
 
-    --modal-image-width: clamp(var(--image-width), calc(var(--image-width) * var(--modal-scaling-multiplier)), 90vw);
-    --modal-image-height: clamp(var(--image-height), calc(var(--image-height) * var(--modal-scaling-multiplier)), 90vh);
+    --modal-image-width: clamp(var(--image-width), calc(var(--image-width) * var(--modal-scaling-multiplier)), 100%);
+    --modal-image-height: clamp(var(--image-height), calc(var(--image-height) * var(--modal-scaling-multiplier)), 100%);
 }
 
 a {
@@ -213,10 +213,6 @@ body {
     top: calc((100vh - var(--modal-image-height)) / 2);
     left: calc((100vw - var(--modal-image-width)) / 2);
     opacity: 1;
-    background-image: var(--modal-background-image);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 40%;
     display: var(--modal-elements-display);
 
 }
@@ -228,6 +224,34 @@ body {
     opacity: 1;
     z-index: 3;
     display: var(--modal-elements-display);
+    
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.modal-previous {
+    position: fixed;
+    left: 0;
+    top: 50%;
+    opacity: 1;
+    z-index: 3;
+    display: var(--modal-elements-display);
+    user-select: none;
+    
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.modal-next {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    opacity: 1;
+    z-index: 3;
+    display: var(--modal-elements-display);
+    user-select: none;
     
     &:hover {
         cursor: pointer;
