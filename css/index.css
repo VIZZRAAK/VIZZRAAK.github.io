@@ -1,6 +1,6 @@
 :root {
     --image-height: 60vh;
-    --image-width: 50vw;
+    --image-width: 500px;
     --me-photo-image-height: 120vh;
     --text-color: black;
     --font-weight: 400;
@@ -9,7 +9,12 @@
     --modal-elements-display: none;
     --modal-background-image: url("");
 
+    --image-swap-time-on-screen: 0.5s;
+
     --document-overflow-mode: scroll;
+
+    --initial-fade-in-time: 0.3s;
+    --display-image-fade-in-time: 0.3s;
 
     --modal-scaling-multiplier: 5;
 
@@ -35,7 +40,7 @@ body * {
 
 body {
     opacity: 0;
-    animation: fadeIn 0.3s ease 0.3s forwards;
+    animation: fadeIn var(--initial-fade-in-time) ease 0.3s forwards;
     overflow: var(--document-overflow-mode)
 }
 
@@ -124,7 +129,7 @@ body {
 .bg-image-wrapper {
     height: var(--image-height);
     background-color: white !important;
-    width: 500px;
+    width: var(--image-width);
     transition: opacity 0.2s ease-in-out;
 
     & h1 {
@@ -159,7 +164,7 @@ body {
 
 .cycle-item {
     animation-name: cycle;
-    animation-duration: 2.5s;
+    animation-duration: calc(var(--image-swap-time-on-screen) * 5);
     animation-timing-function: step-end;
     animation-iteration-count: infinite;
 }
@@ -168,16 +173,16 @@ body {
     animation-delay: 0.0s;
 }
 .cycle-item:nth-child(2) {
-    animation-delay: 0.5s;
+    animation-delay: var(--image-swap-time-on-screen);
 }
 .cycle-item:nth-child(3) {
-    animation-delay: 1.0s;
+    animation-delay: calc(var(--image-swap-time-on-screen) * 2);
 }
 .cycle-item:nth-child(4) {
-    animation-delay: 1.5s;
+    animation-delay: calc(var(--image-swap-time-on-screen) * 3);
 }
 .cycle-item:nth-child(5) {
-    animation-delay: 2.0s;
+    animation-delay: calc(var(--image-swap-time-on-screen) * 4);
 }
 
 .lower-container {
@@ -270,9 +275,9 @@ body {
 }
 
 .display-image-wrapper {
-    height: 60vh;
-    width: 500px;
-    transition: opacity 0.3s ease-in-out, transform 0.5s ease-in-out;
+    height: var(--image-height);
+    width: var(--image-width);
+    transition: opacity var(--display-image-fade-in-time) ease-in-out, transform 0.5s ease-in-out;
     opacity: 0;
     transform: translateY(20px);
 
