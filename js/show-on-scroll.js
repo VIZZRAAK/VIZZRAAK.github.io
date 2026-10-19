@@ -10,6 +10,8 @@ const ioShowCallback = (entries, observer) => {
         if (entry.isIntersecting) {
             entry.target.style.opacity = 1;
             entry.target.style.transform = "translateY(0px)";
+
+            observer.unobserve(entry.target);
         } else {
             entry.target.style.opacity = 0;
             entry.target.style.transform = "translateY(20px)";
