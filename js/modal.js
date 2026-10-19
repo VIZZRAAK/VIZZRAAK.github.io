@@ -14,6 +14,7 @@ for (let imageIndex = 0; imageIndex < allImages.length; imageIndex++) {
         document.documentElement.style.setProperty("--modal-elements-display", "block");
         document.querySelector(".modal-image").setAttribute("src", imageUrl);
         document.documentElement.style.setProperty("--document-overflow-mode", "hidden");
+        currentModalImageIndex = imageIndex;
     })
 }
 
@@ -28,21 +29,19 @@ modalCloser.addEventListener("click", () => {
 })
 
 modalPrev.addEventListener("click", () => {
-    if (currentModalImageIndex - 1 >= 0) {
+    if (currentModalImageIndex <= 0) {
+        currentModalImageIndex = maxModalImageIndex - 1;
+    } else {
         currentModalImageIndex -= 1;
-    }
-    else {
-        currentModalImageIndex = (maxModalImageIndex - 1);
     }
     document.querySelector(".modal-image").setAttribute("src", allImages[currentModalImageIndex].getAttribute("src"));
 })
 
 modalNext.addEventListener("click", () => {
-    if (currentModalImageIndex + 1 < maxModalImageIndex) {
-        currentModalImageIndex += 1;
-    }
-    else {
+    if (currentModalImageIndex >= (maxModalImageIndex - 1)) {
         currentModalImageIndex = 0;
+    } else {
+        currentModalImageIndex += 1;
     }
     document.querySelector(".modal-image").setAttribute("src", allImages[currentModalImageIndex].getAttribute("src"));
 })
