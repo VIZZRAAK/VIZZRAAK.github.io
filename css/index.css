@@ -9,7 +9,7 @@
     --modal-elements-display: none;
     --modal-background-image: url("");
 
-    --image-swap-time-on-screen: 0.5s;
+    --image-swap-time-on-screen: .75s;
 
     --document-overflow-mode: scroll;
 
