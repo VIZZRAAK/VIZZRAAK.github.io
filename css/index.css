@@ -285,7 +285,7 @@ body {
 
 /* /about-me.html */
 .profile-image-container {
-    height: var(--me-photo-image-height) !important;
+    height: 80vh;
 }
 
 /* all */
