@@ -22,6 +22,12 @@
     --modal-image-height: clamp(var(--image-height), calc(var(--image-height) * var(--modal-scaling-multiplier)), 100%);
 }
 
+@media (width >= 2500px) {
+    :root {
+        --image-width: 1000px !important;
+    }
+}
+
 a {
     text-decoration: none !important;
 }
@@ -285,7 +291,12 @@ body {
 
 /* /about-me.html */
 .profile-image-container {
-    height: 80vh;
+    height: var(--me-photo-image-height);
+    width: 100%;
+    background-image: url("/assets/me.jpeg");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: contain;
 }
 
 /* all */

@@ -2,6 +2,8 @@
 
 <html lang="en">
     <head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!--Site Metadata-->
 		<meta name="description" 
 		content=
@@ -22,7 +24,7 @@
 		"/>
 		<meta property="og:type" content="website"/>
 		<meta property="og:url" content="https://ianadair.net"/>
-		<meta property="og:image" content="https://ianadair.net/assets/me.jpeg"/>
+		<meta property="og:image" content="https://ianadair.net/assets/me_rotated.jpeg"/>
 		<meta property="og:image:type" content="image/jpg"/>
 		<meta property="og:image:alt" content="Ian Adair..."/>
 		<meta property="og:site_name" content="Ian Adair"/>
@@ -34,12 +36,11 @@
 		Born and raised in the Bay Area, Ian Adair is a principled progressive organizer with an 
 		extensive education in art in addition to years of blue-collar work experience.
 		"/>
-		<meta name="twitter:image" content="https://ianadair.net/assets/me.jpeg"/>
+		<meta name="twitter:image" content="https://ianadair.net/assets/me_rotated.jpeg"/>
 		<meta name="twitter:url" content="https://ianadair.net"/>
-		<link rel="icon" href="/assets/favicon.ico">
+		<link rel="icon" href="/assets/favicon.png">
         <!--CSS Linking-->
 		<link rel="stylesheet" type="text/css" href="/css/index.css"/>
-		<link rel="stylesheet" type="text/css" href="/css/media-queries.css"/>
 		<!--Fonts-->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -62,7 +63,7 @@
 					"description": 
 					"Born and raised in the Bay Area, Ian Adair is a principled progressive organizer with an 
 					extensive education in art in addition to years of blue-collar work experience.",
-					"image": "https://ianadair.net/assets/me.jpeg",
+					"image": "https://ianadair.net/assets/me_rotated.jpeg",
 					"sameAs": [
 						"https://www.linkedin.com/in/ian-adair-78143824a/",
 						"https://www.instagram.com/loyalaumortstudio/"
@@ -77,7 +78,7 @@
         <header>
             <div class="h-25 mb-5 px-5 pt-5 pb-1 text-break">
                 <nav>
-                    <div class="d-flex w-full">
+                    <div class="d-flex w-100">
                         <h1 class="font-text fs-4 fw-medium"><a href="/">Ian Adair</a></h1>
                         <h1 class="font-text fs-4 fw-medium ms-auto"><a href="/about-me.html">About Me</a></h1>
                     </div>
@@ -85,13 +86,10 @@
             </div>
         </header>
 		<main>
-			<div class="p-5 mt-5">
-				<div class="profile-image-container flex">
-					<img width="100%" height="100%" class="profile-image d-flex h-100 object-fit-contain" src="/assets/me.jpeg" alt="Could not load..."/>
-				</div>
-				<div class="w-50"></div>
-				<div class="py-3">
-					<p class="font-text fade-in footer-text-div fs-4 fw-light">
+			<div class="d-flex flex-column gap-5 px-5">
+				<div class="d-flex profile-image-container"></div>
+				<div class=" d-flex">
+					<p class="font-text fade-in footer-text-div fs-4 fw-light mt-5">
 						Born in San Francisco, Ian Adair moved to Oregon where he graduated from 
 						Southern Oregon University with a Bachelors of Science in Art and 
 						EMDA(Emerging Media & Digital Arts) in 2023. Since moving back to 
@@ -100,21 +98,21 @@
 						progressive organizations and political campaigns.
 					</p>
 				</div>
-				<div class="fade-in footer-text-div mt-5 h-20 w-100 d-flex flex-row">
-					<div class="font-text w-20 fw-bold d-flex flex-column flex-grow-1 align-content-start">
+				<div class="fade-in flex-wrap footer-text-div h-20 w-100 d-flex flex-row gap-4">
+					<div class="font-text w-20 fw-bold d-flex flex-row flex-md-column flex-grow-1 align-content-start">
 						Works Completed For:
 					</div>
-					<div class="w-20 d-flex flex-column flex-grow-1 gap-3">
-						<div class="font-text flex">Claudia Jimenez Campaign</div>
-						<div class="font-text flex">Atchison Village Credit Union</div>
-						<div class="font-text flex">East Bay DSA</div>
+					<div class="d-flex flex-row flex-md-column flex-grow-1 gap-3">
+						<div class="font-text d-flex">Claudia Jimenez Campaign</div>
+						<div class="font-text d-flex">Atchison Village Credit Union</div>
+						<div class="font-text d-flex">East Bay DSA</div>
 					</div>
-					<div class="w-20 d-flex flex-column flex-grow-1 gap-3">
-						<div class="font-text flex">Teamsters for a Democratic Union</div>
-						<div class="font-text flex">Starbucks Workers United</div>
+					<div class="w-20 d-flex flex-row flex-md-column flex-grow-1 gap-3">
+						<div class="font-text d-flex">Teamsters for a Democratic Union</div>
+						<div class="font-text d-flex">Starbucks Workers United</div>
 					</div>
-					<div class="w-20 d-flex flex-column flex-grow-1"></div>
-					<div class="w-20 d-flex flex-column flex-grow-1"></div>
+					<div class="w-20 d-flex flex-row flex-md-column flex-grow-1"></div>
+					<div class="w-20 d-flex flex-row flex-md-column flex-grow-1"></div>
 				</div>
 			</div>
 		</main>
